@@ -192,9 +192,6 @@
                     <div class="sqs-block-content">
                       <!-- <p style="white-space:pre-wrap;">©2023 by Norimane. All rights reserved</p> -->
                       <p style="white-space:pre-wrap;">©<span id="year"></span> by Norimane. All rights reserved</p>
-                      <script>
-                      document.getElementById('year').textContent = new Date().getFullYear();
-                      </script>
                     </div>
                   </div>
                 </div>
@@ -206,5 +203,11 @@
     </div>
     <!-- canvas-wrapper -->
 
+<!-- Add this at the bottom of your page, before </body> -->
+    <script>
+      window.onload = function() {
+          document.getElementById('year').textContent = new Date().getFullYear();
+      }
+    </script>
   </body>
 </html>
