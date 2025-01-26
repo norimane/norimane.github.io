@@ -114,7 +114,7 @@
             useEffect(() => {
                 const fetchNews = async () => {
                     try {
-                        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.nhk.or.jp%2Frss%2Fnews%2Fprimary.xml&api_key=YOUR_RSS2JSON_API_KEY');
+                        const response = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.nhk.or.jp%2Frss%2Fnews%2Fprimary.xml&api_key=xhnd0rqyoxwrbtvupwe3sebxde1atttiuswv22ey');
                         const data = await response.json();
                         setNews(data.items || []);
                         setLoading(false);
